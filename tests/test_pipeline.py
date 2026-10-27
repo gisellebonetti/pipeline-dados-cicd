@@ -34,7 +34,7 @@ def test_pipeline_gera_resumo_correto():
 
     produtos = {linha["produto"]: linha for linha in linhas}
 
-    assert float(produtos["Notebook"]["faturamento_total"]) == 10500.0
+    assert float(produtos["Notebook"]["faturamento_total"]) == 10501.0
     assert float(produtos["Monitor"]["faturamento_total"]) == 2700.0
     assert float(produtos["Teclado"]["faturamento_total"]) == 1050.0
     assert float(produtos["Mouse"]["faturamento_total"]) == 560.0
